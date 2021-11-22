@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador by NpSSilva</title>
+
+
+</head>
+<body>
+
+    <div id="inicio">
+
+        <strong><h1 id="titulo-inicial" class="center"> Sorteador</h1></strong>
+        <h2 id="sub-titulo" class="center"><b>Rápido, fácil e simples</b></h2>
+
+        <div class="center">
+    
+            <h3>Sortear até o numero:</h3> <!-- titulo inicial -->
+    
+            <input id='input-numero' oninput="numberInput(this)" type="number" value=""><br> <!-- input numero -->
+    
+            <a id='texto-sortear' onclick="sortear()">Sortear!</a> <!-- ir para o sorteio -->
+            
+            <br><br><br>
+            <i style="font-size: 0.6em; padding-top: 100px;">Desenvolvido por <b style="color: green;">NpSSilva</b></i>
+        </div>
+        
+    </div>
+
+    <div id="sorteador" class="sorteador-display">    
+
+        <strong><h1 id="titulo">O numero sorteado é:</h1></strong>
+        
+        <h1 id="randomnumber"><u>0</u></h1>
+        <p id="info"></p>
+
+        <div id="center-buttons">
+            <div id="alterar" class="buttons" onclick="clickEMudar()">Repetir</div>
+            <div id="deletar" class="buttons" onclick="clickEDeletar(this)">Resetar</div>
+            <div id="retornar" class="buttons" onclick="retornar()"><u>Voltar</u></div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </div>
+
+</body>
+</html>
