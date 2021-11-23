@@ -23,9 +23,9 @@ function sortear() {
             titulo.style.color = coloor
     
             let inicio = document.getElementById('inicio')
-                inicio.classList.add('inicio-display')
+                inicio.classList.add('display-none')
             let sorteador = document.getElementById('sorteador')
-                setsorteador.classList.remove('sorteador-display')
+                sorteador.classList.remove('display-none')
     
             let info = document.getElementById('info')
             info.innerHTML = "Até o numero: " + valor
@@ -36,9 +36,9 @@ function sortear() {
 
     function retornar(){
         let inicio = document.getElementById('inicio')
-            inicio.classList.remove('inicio-display')
+            inicio.classList.remove('display-none')
         let sorteador = document.getElementById('sorteador')
-            sorteador.classList.add('sorteador-display')
+            sorteador.classList.add('display-none')
     }
 
 

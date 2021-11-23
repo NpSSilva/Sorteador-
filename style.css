@@ -216,11 +216,7 @@ a{
 }
 /* JS */
 
-.inicio-display{
+.display-none{
     display: none;
 }
 
-.sorteador-display{
-    display: none;
-      
-}
